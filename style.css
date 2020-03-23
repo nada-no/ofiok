@@ -185,10 +185,13 @@ section {
 }
 
 footer {
-    background-color: black;
-    color: slategray;
+    background-color: rgb(26, 26, 26);
+    color: rgb(64, 64, 64);
     font-family: arsenal, sans-serif;
-    padding: 1vw;
+    padding: 2vw;
+    padding-top: 5vw;
+  position: relative;
+    z-index: -1;
 }
 
 
@@ -202,14 +205,42 @@ footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
     font-family: regato;
+     transform: skewY(4deg);
+    transform-origin: top left;
     
     }
+
+.menu>div{
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+      transform: skewY(-4deg);
+    transform-origin: top left;
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    top: 25vh;
+}
+
+.tarjeta{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
 
 #contacto{
      background-color: black;
     width: 100%;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    transform: skewY(4deg);
+    transform-origin: top left;
+}
+
+#contacto div{
+     transform: skewY(-4deg);
+    transform-origin: top left;
+    margin: 5vh;
 }
 
 #contacto p{
@@ -220,7 +251,7 @@ footer {
 }
 
 #portada {
-    height: 95vh;
+    height: 93vh;
 
 
 }
