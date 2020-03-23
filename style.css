@@ -1,0 +1,215 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*FUENTES DE TEXTO*/
+
+@font-face {
+    font-family: regato;
+    src: url(fonts/Regatto.ttf);
+}
+
+@font-face {
+    font-family: arsenal;
+    src: url(fonts/Arsenal-Regular.otf);
+}
+
+
+
+
+/*COMIENZO DEL CSS DESPUÉS DEL RESETEO*/
+
+/*ELEMENTOS*/
+
+html,
+body {}
+
+
+body {
+    background: url(https://www.regeneracionlibertaria.org/wp-content/uploads/2014/11/imagen-620x350.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    color: #ffcc00;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+
+}
+
+main h1 {
+    font-size: 5.5vw;
+    font-family: regato, serif;
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+}
+
+main p {
+    font-family: arsenal, sans-serif;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+section {
+
+    width: 65vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer {
+    background-color: black;
+    color: slategray;
+    font-family: arsenal, sans-serif;
+}
+
+
+
+.menu {
+    background-color: black;
+    width: 100%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: regato;
+    
+    
+
+}
+
+#portada {
+    height: 95vh;
+
+
+}
+
+/*DIAGONALES*/
