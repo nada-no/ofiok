@@ -1,0 +1,297 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+
+
+blockquote,
+q {
+    quotes: none;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+@font-face {
+    font-family: regato;
+    src: url(fonts/Regatto.ttf);
+}
+
+@font-face {
+    font-family: arsenal;
+    src: url(fonts/Arsenal-Regular.otf);
+}
+
+
+.encabezado{
+ background: url(images/bloques_fantasma.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 67vh;
+    position: relative;
+    color: #ffcc00;
+
+}
+
+.encabezado div{
+    position: absolute;
+    bottom: 30px;
+}
+
+.encabezado a{
+    color: inherit;
+    margin: 5px;
+    margin-left: 40px;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: regato, serif;
+    color: #ffcc00;
+
+}
+
+h2,h3,h4,h5{
+    
+    padding-left: 10px;
+}
+
+h1{
+    font-size: 70px;
+            text-align: center;
+
+}
+
+
+body{
+    font-family: arsenal, sans-serif;
+    color:darkslategray;
+}
+
+strong{
+    font-weight: bolder;
+}
+
+em{
+    font-style: italic;
+}
+
+p,ul,ol,quote{
+    padding: 10px;
+    line-height: 1.5;
+    
+}
+
+
+h1,h2{
+    padding-top: 40px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+h3{
+    font-size: 19px;
+    padding-top: 20px;
+}
+
+ol{
+  list-style-type: none;
+}
+
+ul{
+    padding-left: 60px;
+    list-style-type: disc;
+    text-decoration: none;
+    
+}
+
+
+#franja{
+    display: block;
+    background-color: black;
+    color: #ffcc00;
+   padding: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    padding-left: 0;
+ 
+}
+
+#contenido{
+    display: none;
+    font-size: 16px;
+    
+}
+
+blockquote{
+    background-color: #ffcc00;
+    transform: skewY(2deg);
+    transform-origin: top left;
+    padding: 30px;
+    color:black;
+    margin-top: 40px;
+
+    margin-bottom: 40px;
+}
+
+blockquote>p{
+     transform: skewY(-2deg);
+    transform-origin: top left;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+blockquote>img{
+     transform: skewY(-2deg);
+    transform-origin: top left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+
+    background-color: black;
+display: block;
+    width: 100%;
+    color: #ffcc00;
+    border: none;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: arsenal, sans-serif;
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #ffcc00;
+    color: black;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+main{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}

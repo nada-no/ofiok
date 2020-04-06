@@ -154,6 +154,10 @@ body {
     background-size: cover;
 }
 
+strong{
+    font-weight: bolder;
+}
+
 main {
     color: #ffcc00;
     background: rgba(0, 0, 0, 0.5);
@@ -192,17 +196,16 @@ footer {
     z-index: -1;
 }
 
-a {
-    text-decoration: underline;
-    color: #ffcc00;
+a{ text-decoration: none;}
+
+a:visited{
+    color: inherit;
 }
 
-a:hover {
-    color: black;
-    background-color: #ffcc00;
-    transition: background-color 0.6s, color 0.6s;
-    transition-timing-function: ease;
-}
+
+
+
+
 
 .menu {
     background-color: black;
@@ -284,40 +287,52 @@ form {
 
 input {
     width: 100%;
-   margin-bottom: 10px;
+    margin-bottom: 10px;
     margin-top: 10px;
 }
 
 textarea {
     width: 100.5%;
-     margin-bottom: 10px;
+    margin-bottom: 10px;
     margin-top: 10px;
     color: grey;
     font-family: sans-serif;
     font-size: 12px;
 }
 
-button{
-  
-    background-color: transparent; /* Green */
-  border: 2px solid #ffcc00;  
+button {
+
+    background-color: transparent;
+    /* Green */
+    border: 2px solid #ffcc00;
     color: #ffcc00;
-  padding: 16px 35px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
+    padding: 16px 35px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
     font-family: arsenal, sans-serif;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-    
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
 }
 
-button:hover{
+button:hover {
     background-color: #ffcc00;
     color: black;
 }
 
+.icono {
+    position: absolute;
+    top: 92vh;
+    left: 45vw;
+     -webkit-animation-name: icono;
+    animation-name: icono;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+}
 
 
 /*ANIMACION INICIO*/
@@ -343,6 +358,43 @@ button:hover{
     }
 }
 
+@keyframes icono {
+    from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+
+
+
+
 
 
 
@@ -350,11 +402,11 @@ button:hover{
 
 @media only screen and (max-width: 700px) {
 
-   main p {
-font-size: 14px;
+    main p {
+        font-size: 14px;
     }
-    
-    button{
+
+    button {
         width: 100%;
     }
 
