@@ -133,11 +133,12 @@ table {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 67vh;
     position: relative;
     color: #ffcc00;
+    height: 70vh;
 
 }
+
 
 .encabezado div{
     position: absolute;
@@ -149,6 +150,61 @@ table {
     margin: 5px;
     margin-left: 40px;
 }
+
+#navbar{
+    float: left;
+}
+
+#logo{
+    display: none;
+}
+
+#lang{
+    float: right;
+}
+
+#langcont{
+    position: absolute;
+    top: 60px;
+}
+
+.desplega{
+   border: none;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+     color: #ffcc00;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    z-index: 300;
+    display: block;
+    width: 100%;
+    margin: 0;
+    float: none;
+}
+
+.desplega a:hover{
+    text-decoration: underline;
+}
+
+#volver{
+    transform: rotate(180deg);
+    width: 50px;
+    height: 5s0px;
+    border: 3px solid #ffcc00;
+    position: fixed;
+    z-index: 500;
+    bottom: 10vh;
+    right: 10vw;
+    border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+}
+
+
 
 h1,h2,h3,h4,h5{
     font-family: regato, serif;
@@ -217,17 +273,34 @@ ul{
     display: block;
     background-color: black;
     color: #ffcc00;
-   padding: 20px;
+   padding-left: 50px;
     cursor: pointer;
+    font-size: 20px; 
+}
+
+nav{
+    background-color: black;
+    padding: 16px;
+    color: #ffcc00;
+    text-align: center;
     font-size: 20px;
-    padding-left: 0;
- 
+    font-weight: bold;
+    height: 60px;
+    
+}
+
+nav:hover{
+    cursor: pointer;
 }
 
 #contenido{
     display: none;
     font-size: 16px;
     
+}
+
+#contenido a:hover{
+    text-decoration: underline;
 }
 
 blockquote{
@@ -294,4 +367,19 @@ main{
     padding-bottom: 50px;
     padding-left: 40px;
     padding-right: 40px;
+}
+
+@media only screen and (min-width: 700px) {
+
+
+nav{
+    position: fixed;
+    margin: 40px;
+    z-index: 200;
+    
+}
+
+
+
+
 }
