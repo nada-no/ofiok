@@ -278,6 +278,10 @@ a:visited{
 
 }
 
+footer *{
+    display: inline-block;
+}
+
 form {
     padding-top: 5vw;
     padding-bottom: 5vw;

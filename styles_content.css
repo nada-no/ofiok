@@ -155,9 +155,7 @@ table {
     float: left;
 }
 
-#logo{
-    display: none;
-}
+
 
 #lang{
     float: right;
@@ -196,8 +194,8 @@ table {
     border: 3px solid #ffcc00;
     position: fixed;
     z-index: 500;
-    bottom: 10vh;
-    right: 10vw;
+    bottom: 8vh;
+    right: 8vw;
     border-radius: 10px 10px 10px 10px;
 -moz-border-radius: 10px 10px 10px 10px;
 -webkit-border-radius: 10px 10px 10px 10px;
@@ -245,7 +243,7 @@ p,ul,ol,quote{
 
 
 h1,h2{
-    padding-top: 40px;
+    padding-top: 100px;
 }
 
 h2{
@@ -273,7 +271,7 @@ ul{
     display: block;
     background-color: black;
     color: #ffcc00;
-   padding-left: 50px;
+   padding-left: 40px;
     cursor: pointer;
     font-size: 20px; 
 }
@@ -296,6 +294,7 @@ nav:hover{
 #contenido{
     display: none;
     font-size: 16px;
+    padding: 0;
     
 }
 
@@ -369,17 +368,76 @@ main{
     padding-right: 40px;
 }
 
+#navgran{
+    display:none;
+}
+
+footer *{
+    display: inline-block;
+}
+
+footer{
+     background-color: rgb(26, 26, 26);
+    color: rgb(64, 64, 64);
+    font-family: arsenal, sans-serif;
+    padding: 2vw;
+    padding-top: 5vw;
+}
+
 @media only screen and (min-width: 700px) {
 
 
 nav{
     position: fixed;
-    margin: 40px;
+   padding: 0;
     z-index: 200;
-    
+    background-color: transparent;
+    font-weight: normal;
+    display: block;
+    width: 100%;
+           font-size: 20px;
+    font-family: regato, serif;
+            text-shadow: 0px 0px 2px black;
+
+
 }
 
+    #navbar{
+        display:none;
+    }
+    
+    #langbar{
+        float:right;
+        margin-right: 50px;
+    }
+    
+    #navgran{
+        float:left;
+        margin-left: 50px;
+        padding: 0;
+        display: block;
+        
+    }
+    
+    #navgran div{
+        display: inline-block;
+        padding: 16px;
+        padding-left: 0;
+        padding-right: 20px;
+    }
+    
+    #navgran div:hover{
+        text-decoration: underline;
+    }
 
-
-
+    .desplega{
+        width: 200px;
+    }
+    
+    button{
+        width: 300px;
+        display: inline-block;
+        margin-right: 15px;
+    }
+  
 }
